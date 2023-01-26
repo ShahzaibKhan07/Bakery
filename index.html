@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        .dropdown-item:hover {
+      .dropdown-item:hover {
             background-color: #CE873A;
         }
         .btn{
@@ -27,7 +27,7 @@
             color:#CE873A; 
             border: none; 
         }
-        #logo{
+        /* #logo{
             margin-left: 530px;
         }
         .carousel-inner{
@@ -38,8 +38,24 @@
             margin-right: 100px;
             
 
-        }
-     
+        }  */
+       
+     .card {
+        border: none;
+      
+     }
+     .list{
+        list-style: none;
+        padding: 2%;
+       
+     }
+     .card-footer{
+        background-color: white;
+        border : none;
+        color: #ad6e2a;
+        font-weight: bold;
+     }
+
     </style>
 
 </head>
@@ -118,14 +134,14 @@
           <div class="carousel-item">
             <img src="images/cover (1).jpg" class="d-block w-100" alt="...">
           </div>
-        <div class="d-flex justify-content-center">
-          <div class="z-index-2 position-absolute top-0 start-50 text-center">
-            <h5 class="text-white m">Super Delicious Cake</h5>
+        <!-- <div class="container">
+          <div class="z-index-2 position-absolute mx-auto text-center border border-dark">
+            <h5 class="text-white">Super Delicious Cake</h5>
               <p class="text-white">100% NATURAL, FRESH BAKED GOODS</p>
               <button class="btn btn-primary">Shop Now</button>
             
           </div>
-        </div>
+        </div> -->
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -137,9 +153,75 @@
         </button>
       </div>
 
+      <div class="card-group ">
+        <div class="card">
+          <img src="/images/pic (1).jpg" class="card-img-top" height="500px" alt="...">
+        </div>
+        <div class="card">
+          <div class="card-body p-5 text-center " style="background-color: #ad6e2a;">
+            <!-- <img src="images/logo 2.png" width="200px" height="30px" alt=""> -->
+            <h3 class="card-title fw-bold">Best Services</h3>
+            <p class="card-text ">ISO, Halal, & Haccap certified, approved by the London Food Authority & made to the very highest standards of hygiene & healthfulness</p>
+          <ul>
+            <li class="list">BEST QUALITY</li>
+            <li class="list">EVENTS CAKES</li>
+            <li class="list">INGREDIENT SUPPLY</li>
+            <li class="list">FAST DELIVERED</li>
+            <li class="list">ONLINE BOOKING</li>
+          </ul>
+          <button class="btn btn-primary">Order Now</button>
+        </div>
+        </div>
+        <div class="card">
+          <img src="/images/pic (2).jpg" class="card-img-top" height="500px" alt="...">
+        </div>
+      </div>
 
+      <div class="card-group">
+        <div class="card">
+          <img src="images/13.png" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">Dave and busters triple chocolate</h5>
+            
+          </div>
+          <div class="card-footer text-center">
+            <small>$6.00</small>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/17.png" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">Pain au chocolate Croissant</h5>
 
-
+          </div>
+          <div class="card-footer text-center">
+            <small>$8.00</small>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/31.png" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">Tiramisu cake</h5>
+        
+          </div>
+          <div class="card-footer text-center">
+            <small>$10.00</small>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/33.png" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">Queen B's cake</h5>
+            
+          </div>
+          <div class="card-footer text-center">
+            <small>$12.00</small>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mt-5">
+        <button class="btn btn-outline-secondary btn-lg rounded-pill">All Products</button>
+      </div>
 </body>
 
 </html>
