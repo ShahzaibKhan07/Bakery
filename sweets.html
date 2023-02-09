@@ -11,7 +11,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-  
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
@@ -56,7 +56,7 @@
       list-style: none;
       padding: 1.5%;
       margin-right: 10%;
-      
+
 
     }
 
@@ -80,7 +80,7 @@
       height: 35rem;
       padding-top: 5.5rem;
     }
-    
+
     .badge-notify {
       background: rgb(0, 0, 0);
       position: relative;
@@ -131,11 +131,16 @@
 
       }
     }
+    .page-link:hover{
+      background-color: #ad6e2a;
+      color: black;
+      font-weight: bold
+    }
   </style>
 </head>
 
 <body>
-    <div class="container-fluid p-2 sticky-top " style="background-color: #CE873A;">
+  <div class="container-fluid p-2 sticky-top " style="background-color: #CE873A;">
 
     <div class="d-flex justify-content-between">
       <div class="p-2"><i class="fa fa" style="font-size:24px; color: black;"></i></div>
@@ -148,11 +153,11 @@
 
       <div class="ms-auto p-2">
         <i class="fa fa-search" style="font-size:24px; color: black;"></i>
-        <i class="fa fa-heart-o ps-2" style="font-size:24px; color: black;"></i>
+
         <a class="text-reset me-2" href="#">
-            <i class="fa fa-shopping-cart ps-2 fa-lg my-cart-icon" style="font-size:24px; "><span
-                class="badge badge-notify my-cart-badge"></span></i>
-          </a>
+          <i class="fa fa-shopping-cart ps-2 fa-lg my-cart-icon" style="font-size:24px; "><span
+              class="badge badge-notify my-cart-badge"></span></i>
+        </a>
       </div>
     </div>
   </div>
@@ -176,7 +181,7 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="sweets.html">Sweets</a></li>
-              <li><a class="dropdown-item" href="#">Bakery</a></li>
+              <li><a class="dropdown-item" href="cakes.html">Bakery</a></li>
 
             </ul>
           </li>
@@ -199,169 +204,445 @@
     <img src="images/sweets/sweets.jpg" class="card-img" alt="...">
     <div class="card-img-overlay">
       <h5 class="card-title">Sweets</h5>
-      
+
     </div>
   </div>
 
-  
-  
+
+
   <div class="container mt-5">
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/sweets/Akhrot-Halwa-300x300.jpg" class="card-img-top" alt="...">
-            <div class="card-body text-center">
-              <h5 class="card-title ">Akhrot Halwa</h5>
-              <p class="card-text fw-bold">$5.00</p>
-            </div>
-            <div class="card-footer d-flex justify-content-center">
-              <button type="submit" class="btn button-hover my-cart-btn" data-id="1" data-name="Akhrot Halwa"
-            data-summary="summary 1" data-price="5.00" data-quantity="1" data-image="images/sweets/Akhrot-Halwa-300x300.jpg">Order Now</button>
-            </div>
+    <div class="row mt-2 g-4">
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="images/sweets/Akhrot-Halwa-300x300.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title ">Akhrot Halwa</h5>
+            <p class="card-text fw-bold">$5.00</p>
+          </div>
+          <div class="card-footer d-flex justify-content-center">
+            <button type="submit" class="btn button-hover my-cart-btn" data-id="1" data-name="Akhrot Halwa"
+              data-price="5.00" data-quantity="1" data-image="images/sweets/Akhrot-Halwa-300x300.jpg">Order Now</button>
           </div>
         </div>
-        <div class="col">
-            <div class="card h-100">
-              <img src="images/sweets/Badam-Halwa-300x300.jpg" class="card-img-top" alt="...">
-              <div class="card-body text-center">
-                <h5 class="card-title ">Badam Halwa</h5>
-                <p class="card-text fw-bold">$8.00</p>
-              </div>
-              <div class="card-footer d-flex justify-content-center">
-                <button class="btn btn-primary ">Order Now</button>
-              </div>
-            </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="images/sweets/Badam-Halwa-300x300.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title ">Badam Halwa</h5>
+            <p class="card-text fw-bold">$8.00</p>
           </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="images/sweets/Baisan-Laddu-300x300.jpg" class="card-img-top" alt="...">
-              <div class="card-body text-center">
-                <h5 class="card-title ">Baisan Laddu</h5>
-                <p class="card-text fw-bold">$6.00</p>
-              </div>
-              <div class="card-footer d-flex justify-content-center">
-                <button class="btn btn-primary ">Order Now</button>
-              </div>
-            </div>
+          <div class="card-footer d-flex justify-content-center">
+            <button type="submit" class="btn button-hover my-cart-btn" data-id="1" data-name="Badam Halwa"
+              data-price="8.00" data-quantity="1" data-image="images/sweets/Badam-Halwa-300x300.jpg">Order Now</button>
           </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="images/sweets/Baisan-Laddu-300x300.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title ">Baisan Laddu</h5>
+            <p class="card-text fw-bold">$6.00</p>
+          </div>
+          <div class="card-footer d-flex justify-content-center">
+            <button type="submit" class="btn button-hover my-cart-btn" data-id="1" data-name="Baisan-laddu"
+              data-price="8.00" data-quantity="1" data-image="images/sweets/Baisan-Laddu-300x300.jpg">Order Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="images/sweets/Baisan-Pateesa-300x300.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title ">Baisan Pateesa</h5>
+            <p class="card-text fw-bold">$4.00</p>
+          </div>
+          <div class="card-footer d-flex justify-content-center">
+            <button type="submit" class="btn button-hover my-cart-btn" data-id="1" data-name="Baisan-pateesa"
+              data-price="8.00" data-quantity="1" data-image="images/sweets/Baisan-Pateesa-300x300.jpg">Order
+              Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row g-4 mt-2">
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="images/sweets/Balushahi-300x300.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title ">Balushahi</h5>
+            <p class="card-text fw-bold">$8.00</p>
+          </div>
+          <div class="card-footer d-flex justify-content-center">
+            <button type="submit" class="btn button-hover my-cart-btn" data-id="1" data-name="Balushahi"
+              data-price="8.00" data-quantity="1" data-image="images/sweets/Balushahi-300x300.jpg">Order Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="images/sweets/Barfi-300x300.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title ">Barfi</h5>
+            <p class="card-text fw-bold">$3.00</p>
+          </div>
+          <div class="card-footer d-flex justify-content-center">
+            <button type="submit" class="btn button-hover my-cart-btn" data-id="1" data-name="Barfi" data-price="8.00"
+              data-quantity="1" data-image="images/sweets/Barfi-300x300.jpg">Order Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="images/sweets/Black-jaman-300x300.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title ">Black jaman</h5>
+            <p class="card-text fw-bold">$2.00</p>
+          </div>
+          <div class="card-footer d-flex justify-content-center">
+            <button type="submit" class="btn button-hover my-cart-btn" data-id="1" data-name="Black-jaman"
+              data-price="8.00" data-quantity="1" data-image="images/sweets/Black-jaman-300x300.jpg">Order Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="images/sweets/Chocolate-Barfi-300x300.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title ">Chocolate Barfi</h5>
+            <p class="card-text fw-bold">$4.00</p>
+          </div>
+          <div class="card-footer d-flex justify-content-center">
+            <button type="submit" class="btn button-hover my-cart-btn" data-id="1" data-name="Chocolate-Barfi"
+              data-price="8.00" data-quantity="1" data-image="images/sweets/Chocolate-Barfi-300x300.jpg">Order
+              Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4 mt-2">
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="images/sweets/Chocolate-Roll-300x300.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title ">Chocolate Roll</h5>
+            <p class="card-text fw-bold">$5.00</p>
+          </div>
+          <div class="card-footer d-flex justify-content-center">
+            <button type="submit" class="btn button-hover my-cart-btn" data-id="1" data-name="Chocolate-Roll"
+              data-price="8.00" data-quantity="1" data-image="images/sweets/Chocolate-Roll-300x300.jpg">Order
+              Now</button>
+          </div>
+        </div>
       </div>
 
 
-      <div class="row row-cols-1 row-cols-md-3 g-4 mt-2">
-        <div class="col">
-          <div class="card h-100">
-            <img src="images/sweets/Baisan-Pateesa-300x300.jpg" class="card-img-top" alt="...">
-            <div class="card-body text-center">
-              <h5 class="card-title ">Baisan Pateesa</h5>
-              <p class="card-text fw-bold">$4.00</p>
-            </div>
-            <div class="card-footer d-flex justify-content-center">
-              <button class="btn btn-primary ">Order Now</button>
-            </div>
+
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="images/sweets/Dhaka-Chumchum-300x300.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title ">Dhaka chamcham</h5>
+            <p class="card-text fw-bold">$3.00</p>
+          </div>
+          <div class="card-footer d-flex justify-content-center">
+            <button type="submit" class="btn button-hover my-cart-btn" data-id="1" data-name="Dhaka-chamcham"
+              data-price="8.00" data-quantity="1" data-image="images/sweets/Dhaka-Chumchum-300x300.jpg">Order
+              Now</button>
           </div>
         </div>
-        <div class="col">
-            <div class="card h-100">
-              <img src="images/sweets/Balushahi-300x300.jpg" class="card-img-top" alt="...">
-              <div class="card-body text-center">
-                <h5 class="card-title ">Balushahi</h5>
-                <p class="card-text fw-bold">$8.00</p>
-              </div>
-              <div class="card-footer d-flex justify-content-center">
-                <button class="btn btn-primary ">Order Now</button>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="images/sweets/Barfi-300x300.jpg" class="card-img-top" alt="...">
-              <div class="card-body text-center">
-                <h5 class="card-title ">Barfi</h5>
-                <p class="card-text fw-bold">$3.00</p>
-              </div>
-              <div class="card-footer d-flex justify-content-center">
-                <button class="btn btn-primary ">Order Now</button>
-              </div>
-            </div>
-          </div>
       </div>
 
 
+
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="images/sweets/Gajar-halwa-300x300.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title ">Gajar Halwa</h5>
+            <p class="card-text fw-bold">$11.00</p>
+          </div>
+          <div class="card-footer d-flex justify-content-center">
+            <button type="submit" class="btn button-hover my-cart-btn" data-id="1" data-name="Gajar halwa"
+              data-price="8.00" data-quantity="1" data-image="images/sweets/Gajar-halwa-300x300.jpg">Order Now</button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="images/sweets/Gol-paida-300x300.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title ">Gol paida</h5>
+            <p class="card-text fw-bold">$3.00</p>
+          </div>
+          <div class="card-footer d-flex justify-content-center">
+            <button type="submit" class="btn button-hover my-cart-btn" data-id="1" data-name="Gol-paida"
+              data-price="8.00" data-quantity="1" data-image="images/sweets/Gol-paida-300x300.jpg">Order Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4 mt-2">
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="images/sweets/Gol-paida-brown-300x300.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title ">Gol paida brown</h5>
+            <p class="card-text fw-bold">$3.50</p>
+          </div>
+          <div class="card-footer d-flex justify-content-center">
+            <button type="submit" class="btn button-hover my-cart-btn" data-id="1" data-name="Gol-paida-brown"
+              data-price="8.00" data-quantity="1" data-image="images/sweets/Gol-paida-brown-300x300.jpg">Order
+              Now</button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="images/sweets/Gulab-jaman-300x300.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title ">Gulab jaman</h5>
+            <p class="card-text fw-bold">$3.50</p>
+          </div>
+          <div class="card-footer d-flex justify-content-center">
+            <button type="submit" class="btn button-hover my-cart-btn" data-id="1" data-name="Gulab-jaman"
+              data-price="8.00" data-quantity="1" data-image="images/sweets/Gulab-jaman-300x300.jpg">Order Now</button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="images/sweets/Habshi-halwa-300x300.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title ">Habshi halwa</h5>
+            <p class="card-text fw-bold">$7.00</p>
+          </div>
+          <div class="card-footer d-flex justify-content-center">
+            <button type="submit" class="btn button-hover my-cart-btn" data-id="1" data-name="Habshi-halwa"
+              data-price="8.00" data-quantity="1" data-image="images/sweets/Habshi-halwa-300x300.jpg">Order Now</button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="images/sweets/Kaju-halwa-300x300.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title ">Kaju halwa</h5>
+            <p class="card-text fw-bold">$10.00</p>
+          </div>
+          <div class="card-footer d-flex justify-content-center">
+            <button type="submit" class="btn button-hover my-cart-btn" data-id="1" data-name="Kaju-halwa"
+              data-price="8.00" data-quantity="1" data-image="images/sweets/Kaju-halwa-300x300.jpg">Order Now</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row g-4 mt-2">
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="images/sweets/Kheer-mohan-300x300.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title ">Kheer mohan</h5>
+            <p class="card-text fw-bold">$4.00</p>
+          </div>
+          <div class="card-footer d-flex justify-content-center">
+            <button type="submit" class="btn button-hover my-cart-btn" data-id="1" data-name="Kheer-mohan"
+              data-price="8.00" data-quantity="1" data-image="images/sweets/Barfi-300x300.jpg">Order Now</button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="images/sweets/Malai-Champ-300x300.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title ">Malai champ</h5>
+            <p class="card-text fw-bold">$5.00</p>
+          </div>
+          <div class="card-footer d-flex justify-content-center">
+            <button type="submit" class="btn button-hover my-cart-btn" data-id="1" data-name="Malai-Champ"
+              data-price="8.00" data-quantity="1" data-image="images/sweets/Malai-Champ-300x300.jpg">Order Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="images/sweets/Mix-Mithai-300x300.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title ">Mix mithai </h5>
+            <p class="card-text fw-bold">$8.00</p>
+          </div>
+          <div class="card-footer d-flex justify-content-center">
+            <button type="submit" class="btn button-hover my-cart-btn" data-id="1" data-name="Mix-Mithai"
+              data-price="8.00" data-quantity="1" data-image="images/sweets/Mix-Mithai-300x300.jpg">Order Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="images/sweets/Moti-Choor-300x300.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title ">Moti Choor</h5>
+            <p class="card-text fw-bold">$6.00</p>
+          </div>
+          <div class="card-footer d-flex justify-content-center">
+            <button type="submit" class="btn button-hover my-cart-btn" data-id="1" data-name="Moti choor"
+              data-price="8.00" data-quantity="1" data-image="images/sweets/Moti-Choor-300x300.jpg">Order Now</button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+    </div>
 
   </div>
-  
+  </div>
+  <div class="container d-flex justify-content-center mt-5">
+    <nav aria-label="Page navigation example">
+      <ul class="pagination ">
+        <li class="page-item"><a class="page-link text-dark" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link text-dark" href="#">1</a></li>
+        <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+        <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+        <li class="page-item"><a class="page-link text-dark" href="#">Next</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <footer class="text-center text-white" style="background-color: #000000;">
+    <!-- Grid container -->
+    <div class="container-fluid pt-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fa fa-facebook-f"></i></a>
+
+        <!-- Twitter -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fa fa-twitter"></i></a>
+
+        <!-- Google -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fa fa-google"></i></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fa fa-instagram"></i></a>
+
+        <!-- Linkedin -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fa fa-linkedin"></i></a>
+        <!-- Github -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fa fa-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center text-dark p-3" style="background-color: #CE873A;">
+      © 2020 Copyright:
+      <a class="text-dark" href="https://mdbootstrap.com/">London Sweets Bakery</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+
+
+
   <script src="js/jquery-2.2.3.min.js"></script>
-    <script type='text/javascript' src="js/bootstrap.min.js"></script>
-    <script type='text/javascript' src="js/jquery.mycart.js"></script>
-  
-  
-  
-  
-  
-    <script type="text/javascript">
-      $(function () {
+  <script type='text/javascript' src="js/bootstrap.min.js"></script>
+  <script type='text/javascript' src="js/jquery.mycart.js"></script>
 
-        var goToCartIcon = function ($addTocartBtn) {
-          var $cartIcon = $(".my-cart-icon");
-          var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({ "position": "fixed", "z-index": "999" });
-          $addTocartBtn.prepend($image);
-          var position = $cartIcon.position();
-          $image.animate({
-            top: position.top,
-            left: position.left
-          }, 500, "linear", function () {
-            $image.remove();
-          });
+  <script type="text/javascript">
+
+    $(function () {
+      var goToCartIcon = function ($addTocartBtn) {
+        var $cartIcon = $(".my-cart-icon");
+        var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({ "position": "fixed", "z-index": "999" });
+        $addTocartBtn.prepend($image);
+        var position = $cartIcon.position();
+        $image.animate({
+          top: position.top,
+          left: position.left
+        }, 500, "linear", function () {
+          $image.remove();
+        });
+      }
+
+      $('.my-cart-btn').myCart({
+        currencySymbol: '$',
+        classCartIcon: 'my-cart-icon',
+        classCartBadge: 'my-cart-badge',
+        classProductQuantity: 'my-product-quantity',
+        classProductRemove: 'my-product-remove',
+        classCheckoutCart: 'my-cart-checkout',
+        affixCartIcon: true,
+        showCheckoutModal: true,
+        numberOfDecimals: 2,
+        cartItems: [
+          { id: 0, name: 'product 0', summary: 'summary 0' },
+
+        ],
+        clickOnAddToCart: function ($addTocart) {
+          goToCartIcon($addTocart);
+        },
+        afterAddOnCart: function (products, totalPrice, totalQuantity) {
+          console.log("afterAddOnCart", products, totalPrice, totalQuantity);
+        },
+        clickOnCartIcon: function ($cartIcon, products, totalPrice, totalQuantity) {
+          console.log("cart icon clicked", $cartIcon, products, totalPrice, totalQuantity);
+        },
+        // checkoutCart: function (products, totalPrice, totalQuantity) {
+        checkoutCart: function (products, totalPrice, totalQuantity) {
+          // var checkoutString = "Total Price: " + totalPrice + "\nTotal Quantity: " + totalQuantity;
+          // checkoutString += "\n\n id \t name \t summary \t price \t quantity \t image path";
+          // $.each(products, function () {
+          //   checkoutString += ("\n " + this.id + " \t " + this.name + " \t " + this.summary + " \t " + this.price + " \t " + this.quantity + " \t " + this.image);
+          // });
+          alert("Please Accept Our Deepest Thanks 🙂");
+          console.log("checking out", products, totalPrice, totalQuantity);
+        },
+        getDiscountPrice: function (products, totalPrice, totalQuantity) {
+          console.log("calculating discount", products, totalPrice, totalQuantity);
+          return totalPrice * 0.5;
         }
-
-        $('.my-cart-btn').myCart({
-          currencySymbol: '$',
-          classCartIcon: 'my-cart-icon',
-          classCartBadge: 'my-cart-badge',
-          classProductQuantity: 'my-product-quantity',
-          classProductRemove: 'my-product-remove',
-          classCheckoutCart: 'my-cart-checkout',
-          affixCartIcon: true,
-          showCheckoutModal: true,
-          numberOfDecimals: 2,
-          cartItems: [
-            { id: 0, name: 'product 0', summary: 'summary 0' },
-
-          ],
-          clickOnAddToCart: function ($addTocart) {
-            goToCartIcon($addTocart);
-          },
-          afterAddOnCart: function (products, totalPrice, totalQuantity) {
-            console.log("afterAddOnCart", products, totalPrice, totalQuantity);
-          },
-          clickOnCartIcon: function ($cartIcon, products, totalPrice, totalQuantity) {
-            console.log("cart icon clicked", $cartIcon, products, totalPrice, totalQuantity);
-          },
-          // checkoutCart: function (products, totalPrice, totalQuantity) {
-            checkoutCart: function (products, totalPrice, totalQuantity) {
-            // var checkoutString = "Total Price: " + totalPrice + "\nTotal Quantity: " + totalQuantity;
-            // checkoutString += "\n\n id \t name \t summary \t price \t quantity \t image path";
-            // $.each(products, function () {
-            //   checkoutString += ("\n " + this.id + " \t " + this.name + " \t " + this.summary + " \t " + this.price + " \t " + this.quantity + " \t " + this.image);
-            // });
-            alert("Please Accept Our Deepest Thanks 🙂");
-            console.log("checking out", products, totalPrice, totalQuantity);
-          },
-          getDiscountPrice: function (products, totalPrice, totalQuantity) {
-            console.log("calculating discount", products, totalPrice, totalQuantity);
-            return totalPrice * 0.5;
-          }
-        });
-
-        $("#addNewProduct").click(function (event) {
-          var currentElementNo = $(".row").children().length + 1;
-          $(".row").append('<div class="col-md-3 text-center "><img src="images/img_empty.png" width="150px" height="150px"><br>product ' + currentElementNo + ' - <strong>$' + currentElementNo + '</strong><br><button class="btn btn-danger my-cart-btn" data-id="' + currentElementNo + '" data-name="product ' + currentElementNo + '" data-summary="summary ' + currentElementNo + '" data-price="' + currentElementNo + '" data-quantity="1" data-image="images/img_empty.png">Add to Cart</button></div>')
-
-        });
       });
 
-  
-</script>
+      $("#addNewProduct").click(function (event) {
+        var currentElementNo = $(".row").children().length + 1;
+        $(".row").append('<div class="col-md-3 text-center "><img src="images/img_empty.png" width="150px" height="150px"><br>product ' + currentElementNo + ' - <strong>$' + currentElementNo + '</strong><br><button class="btn btn-danger my-cart-btn" data-id="' + currentElementNo + '" data-name="product ' + currentElementNo + '" data-summary="summary ' + currentElementNo + '" data-price="' + currentElementNo + '" data-quantity="1" data-image="images/img_empty.png">Add to Cart</button></div>')
+
+      });
+    });
+
+  </script>
 
 </body>
 
