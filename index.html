@@ -80,6 +80,7 @@
       height: 35rem;
       padding-top: 5.5rem;
     }
+
   </style>
 
 </head>
@@ -131,7 +132,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link active ps-5" href="#" style="color: #CE873A;">Gift Hampers</a>
+            <a class="nav-link active ps-5" href="deals.html" style="color: #CE873A;">Gift Hampers</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active ps-5" href="about.html" style="color: #CE873A;">About</a>
@@ -159,14 +160,6 @@
       <div class="carousel-item">
         <img src="images/cover (1).jpg" class="d-block w-100" alt="...">
       </div>
-      <!-- <div class="container">
-          <div class="z-index-2 position-absolute mx-auto text-center border border-dark">
-            <h5 class="text-white">Super Delicious Cake</h5>
-              <p class="text-white">100% NATURAL, FRESH BAKED GOODS</p>
-              <button class="btn btn-primary">Shop Now</button>
-            
-          </div>
-        </div> -->
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -246,7 +239,7 @@
     </div>
   </div>
   <div class="d-flex justify-content-center mt-5 mb-5">
-    <button class="btn btn-outline-secondary btn-lg rounded-pill">All Products</button>
+    <a href="cakes.html" class="btn btn-outline-secondary btn-lg rounded-pill">All Products</a>
   </div>
 
   <div class="container-fluid">
@@ -400,30 +393,36 @@
     </div>
   </div>
 
+
+<div class="container mt-5">
+  <h2 class="text-center fw-bold">Contact Us</h2>
+  <hr class="mx-auto w-75 fw-bold" style="background-color:#ad6e2a;">
+</div>
+
 <div class="container mt-5">
   <div class="row">
-    <div class="col-sm-6">
+    <div class="col-md-6">
       <div class="card">
         <div class="card-body">
-          <img src="images/pic (2).jpg" style="height: 100%;" width="50%" alt="">
+          <!-- <img src="images/pic (2).jpg" style="height: 100%;" width="50%" alt=""> -->
+          <video src="video/video (1).mp4" controls autoplay muted style="height: 100%;" width="100%"></video>
         </div>
       </div>
     </div>
-    <div class="col-sm-6">
+    <div class="col-md-6">
       <div class="card">
         <div class="card-body">
           <form>
-            <!-- 2 column grid layout with text inputs for the first and last names -->
             <div class="row mb-4">
               <div class="col">
                 <div class="form-outline">
-                  <input type="text" id="form3Example1" class="form-control" />
+                  <input type="text" id="form3Example1" class="form-control" required/>
                   <label class="form-label" for="form3Example1">First name</label>
                 </div>
               </div>
               <div class="col">
                 <div class="form-outline">
-                  <input type="text" id="form3Example2" class="form-control" />
+                  <input type="text" id="form3Example2" class="form-control" required/>
                   <label class="form-label" for="form3Example2">Last name</label>
                 </div>
               </div>
@@ -431,27 +430,27 @@
           
             <!-- Email input -->
             <div class="form-outline mb-4">
-              <input type="email" id="form3Example3" class="form-control" />
+              <input type="email" id="form3Example3" class="form-control" required/>
               <label class="form-label" for="form3Example3">Email address</label>
             </div>
           
             <!-- Password input -->
             <div class="form-outline mb-4">
-              <input type="password" id="form3Example4" class="form-control" />
+              <input type="password" id="form3Example4" class="form-control" required/>
               <label class="form-label" for="form3Example4">Password</label>
             </div>
           
             <!-- Checkbox -->
             <div class="form-check d-flex justify-content-center mb-4">
-              <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
+              <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33"  />
               <label class="form-check-label" for="form2Example33">
                 Subscribe to our newsletter
               </label>
             </div>
-          
+          <div class="d-flex justify-content-center">
             <!-- Submit button -->
-            <button type="submit" class="btn btn-primary btn-block mb-4">Sign up</button>
-          
+            <button type="submit" class="btn btn-primary btn-block mb-4 fw-bold">Sign up</button>
+          </div>
      
           </form>
         </div>
