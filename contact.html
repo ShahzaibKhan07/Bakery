@@ -128,6 +128,7 @@
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="sweets.html">Sweets</a></li>
               <li><a class="dropdown-item" href="cakes.html">Bakery</a></li>
+
             </ul>
           </li>
           <li class="nav-item">
@@ -137,7 +138,7 @@
             <a class="nav-link active ps-5" href="about.html" style="color: #CE873A;">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active ps-5" href="contact.html" style="color: #CE873A;">Contact</a>
+            <a class="nav-link active ps-5" href="#" style="color: #CE873A;">Contact</a>
           </li>
         </ul>
 
@@ -145,56 +146,100 @@
     </div>
   </nav>
 
-
-  <div class="container-lg text-center bg-light">
-    <div class="row row-cols-1 row-cols-md-3 g-2">
-      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-        <img src="images/Slider-Sundae.jpg" alt="" class="img" width="80%" height="auto">
-
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-3">
-          <h3 style="font-weight: 700;">To create. To bake. </h3>
-          <p class="col-text fs-4">We are honest in what we do, we put our heart and soul into baking and creating a
-            picture-perfect cake of exquisite taste, just for you. We use only quality baked goods and we will never
-            compromise with any of our ingredients. We strive to work hard each day to exceed customer expectations.</p>
-          <p class="col-text fs-4">We wish to bake for everyone so they may savour the heartfelt delight in the recipes
-            we have researched and developed for more than a year. We want to use our cakes to be an everlasting moment
-            of joy in their memories. We want them to indulge in recollection of enjoyable memories.</p>
-            
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+            <div class="container shadow-sm">
+                <form action="contact.html">  
+                    <div class="row  row-cols-lg-auto g-3 align-items-center">
+                        <div class="col-12  p-3">
+                            <h3 class="display-5 fs-2">Contact Us</h3>
+                        </div>
+        
+                    </div>
+                    <div class="form-outline needs-validation" novalidate>
+                        <div class="row  row-cols-lg-auto g-3 align-items-center">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6  p-3">
+                                <h4 class="display-5 fs-5 text-secondary">Personal Info</h4>
+                                <label for="fname" class="my-2">Fullname *</label>
+                                <input type="text" id="fname" class="form-control border" autocomplete="off" minlength="3"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="row  row-cols-lg-auto g-3 align-items-center">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6  p-3">
+                                <label for="email" class="my-2">Email Address *</label>
+                                <input type="email" id="sender-email" class="form-control border" autocomplete="off"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="row  row-cols-lg-auto g-3 align-items-center">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6  p-3">
+                                <label for="num" class="my-2">Phone Number *</label>
+                                <input type="tel" id="num" class="form-control border" autocomplete="off" required>
+                            </div>
+                        </div>
+                        <div class="row  row-cols-lg-auto g-3 align-items-center">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6  p-3">
+                                <label for="num" class="my-2">Message *</label>
+                                <textarea class="form-control border " id="textArea" rows="4" minlength="12" autocomplete="off"
+                                    required></textarea>
+                            </div>
+                        </div>
+        
+                        <div class="row  row-cols-lg-auto g-3 align-items-center">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12  p-3 text-center">
+        
+        
+                                <button class="btn btn-success fs-5 mt-3" onclick="getanswer()" type="submit">submit</button>
+        
+                            </div>
+                        </div>
+        
+        
+                    </div>
+                </form>
+            </div>
         </div>
       </div>
-
-      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-        <figure>
-
-          <video src="video/video (1).mp4" class="p-1 my-4 shadow-sm" width="100%" height="auto" controls autoplay
-            muted>
-          </video>
-
-      </div>
-      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-        <figure>
-          <video src="video/video (4).mp4" class="p-1 my-4 shadow-sm" width="100%" height="auto" controls autoplay
-            muted>
-
-          </video>
-
-      </div>
-      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-        <figure>
-
-          <!-- <video src="videos/v1.mp4" class="p-2 shadow-sm" width="30%" height="auto" controls> -->
-          <video src="video/video (3).mp4" class="p-1 my-4 shadow-sm" width="100%" height="auto" controls autoplay muted
-            poster="images/purpose-images/Screenshot 2022-12-22 105345.jpg">
-          </video>
-          <!-- <video src="videos/v3.mp4" class="p-2 shadow-sm" width="30%" height="auto" controls> -->
-
-
-        </figure>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+            <div class="container mt-5 d-flex justify-content-center">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7236.278890228164!2d67.02871637342702!3d24.927319091051967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f90157042d3%3A0x93d609e8bec9a880!2sAptech%20Computer%20Education%20North%20Nazimabad%20Center!5e0!3m2!1sen!2s!4v1671549688758!5m2!1sen!2s"
+                    width="100%" height="650px" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+            </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <footer class="text-center text-white" style="background-color: #000000;">
+<script>
+    function getanswer() {
+            var senderemail = document.getElementById("sender-email").value;
+            var emailaddress = /^[A-z0-9]{3,}@[A-z.]{7,12}$/gm;
+            var result1 = emailaddress.test(senderemail);
+            var phonenumber = document.getElementById("num").value;
+            var telcode = /^[+0-9]{4,6}-[0-9]{7}$/gm;
+            var result2 = telcode.test(phonenumber);
+            var enquiry= document.getElementById("inputGroupSelect01").value;
+            var message= document.getElementById("textArea").value;
+            if (enquiry, result1, result2, message ) {
+                show = "we will response you shortly"
+            } else {
+                show = "Kindly Fill the Form Properly"
+            }
+            alert(show);
+
+        }
+
+</script>
+<footer class="text-center text-white" style="background-color: #000000;">
     <!-- Grid container -->
     <div class="container-fluid pt-4">
       <!-- Section: Social media -->
@@ -234,5 +279,4 @@
     <!-- Copyright -->
   </footer>
 </body>
-
 </html>
